@@ -7,30 +7,32 @@
     tools:context=".App.TambahTeman">
 
     <EditText
-        android:id="@+id/edNama"
+        android:id="@+id/edtNama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="112dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Nama"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/edTelpon"
+        android:id="@+id/edtTelpon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="88dp"
         android:ems="10"
         android:hint="Telpon"
         android:inputType="phone"
-        app:layout_constraintEnd_toEndOf="@+id/edNama"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/edtNama"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/edNama"
-        app:layout_constraintTop_toBottomOf="@+id/edNama"/>
+        app:layout_constraintStart_toStartOf="@+id/edtNama"
+        app:layout_constraintTop_toBottomOf="@+id/edtNama" />
 
     <Button
         android:id="@+id/btnSimpan"
@@ -39,8 +41,8 @@
         android:layout_marginBottom="152dp"
         android:text="Simpan"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/edTelpon"
-        app:layout_constraintStart_toStartOf="@id/edTelpon"
-        app:layout_constraintTop_toBottomOf="@id/edTelpon"/>
+        app:layout_constraintEnd_toEndOf="@id/edtTelpon"
+        app:layout_constraintStart_toStartOf="@id/edtTelpon"
+        app:layout_constraintTop_toBottomOf="@id/edtTelpon"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

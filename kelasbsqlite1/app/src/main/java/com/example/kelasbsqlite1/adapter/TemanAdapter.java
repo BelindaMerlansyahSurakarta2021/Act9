@@ -72,7 +72,7 @@ public class TemanAdapter extends RecyclerView.Adapter<TemanAdapter.TemanViewHol
                     @Override
                     public boolean onMenuItemClick(MenuItem item) {
                         switch (item.getItemId()) {
-                            case R.id.mnEdit:
+                            case R.id.edit:
                                 Bundle bendel = new Bundle();
                                 bendel.putString("kunci1", id);
                                 bendel.putString("kunci2", nma);
@@ -81,9 +81,8 @@ public class TemanAdapter extends RecyclerView.Adapter<TemanAdapter.TemanViewHol
                                 inten.putExtras(bendel);
                                 v.getContext().startActivity(inten);
                                 break;
-                            case R.id.mnHapus:
-                                AlertDialog.Builder
-                                        alertdb = new AlertDialog.Builder(v.getContext());
+                            case R.id.hapus:
+                                AlertDialog.Builder alertdb = new AlertDialog.Builder(v.getContext());
                                 alertdb.setTitle("Yakin "+nma+" akan dihapus?");
                                 alertdb.setMessage("Tekan ya untuk menghapus");
                                 alertdb.setCancelable(false);
@@ -114,7 +113,7 @@ public class TemanAdapter extends RecyclerView.Adapter<TemanAdapter.TemanViewHol
         });
     }
     private void HapusData(final String idx) {
-        String url_update = "http://127.0.0.1/umyTI/deletetm.php";
+        String url_update = "https://20200140023.praktikumtiumy.com/deletetm.php";
         final String TAG = MainActivity.class.getSimpleName();
         final String TAG_SUCCESS = "success";
         final int[] sukses = new int[1];

@@ -17,10 +17,8 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.example.kelasbsqlite1.App.AppController;
 import com.example.kelasbsqlite1.MainActivity;
 import com.example.kelasbsqlite1.R;
-import com.google.android.material.textfield.TextInputEditText;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -36,7 +34,7 @@ public class EditTeman extends AppCompatActivity {
     String nma,tlp,id,namaEd,telponEd;
     int sukses;
 
-    private static String url_update="http://127.0.0.1/umyTI/updatetm.php";
+    private static String url_update="https://20200140023.praktikumtiumy.com/updatetm.php";
     private static final String TAG = EditTeman.class.getSimpleName();
     private static final String TAG_SUCCES="success";
 
@@ -46,7 +44,7 @@ public class EditTeman extends AppCompatActivity {
         setContentView(R.layout.activity_edit_teman);
 
         idText = findViewById(R.id.textId);
-        Nama = findViewById(R.id.edNama);
+        Nama = findViewById(R.id.edtNama);
         Telepon = findViewById(R.id.edTelp);
         Save = findViewById(R.id.simpanBTN);
 
